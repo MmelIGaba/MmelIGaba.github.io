@@ -1,45 +1,92 @@
-Hello World
+<!DOCTYPE html>
 <html>
-<head>
-<style>
-.all-browsers {
-  margin: 0;
-  padding: 5px;
-  background-color: lightgray;
+  <head>
+    <title>Mmeli Gabriel Dyantyi's Personal website.</title>
+    <style>
+ * {
+  box-sizing: border-box;
 }
 
-.all-browsers > h1, .browser {
-  margin: 10px;
-  padding: 5px;
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
 }
 
-.browser {
-  background: white;
+.left, .right {
+  width: 25%;
 }
 
-.browser > h2, p {
-  margin: 4px;
-  font-size: 90%;
+.middle {
+  width: 50%;
 }
-</style>
-</head>
-<body>
 
-<article class="all-browsers">
-  <h1>Most Popular Browsers</h1>
-  <article class="browser">
-    <h2>Google Chrome</h2>
-    <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
-  </article>
-  <article class="browser">
-    <h2>Mozilla Firefox</h2>
-    <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
-  </article>
-  <article class="browser">
-    <h2>Microsoft Edge</h2>
-    <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
-  </article>
-</article>
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+      .myFace {
+        width: 350px;
+      }
+      .border {
+        border-color: gray;
+        border-width: 2px;
+        border-style: outset;
+        border-radius: 1%;
+      }
+      
+    </style>
+  </head>
+  <body style="background-color: rgb(172,196,193);">
+   
+    <div class="column left" style="background-color: rgb(192,192,192);">
+      <img
+        class="myFace border"
+        src="/home/mmeli/-MmelIGaba.githib.io/1687246377378.jpeg"
+        alt="My picture"
+      />
 
-</body>
+      <h2>Mmela Gabriel Dyantyi</h2>
+      <h3>Web developer learnership for Equal Experts through Umuzi.org</h3>
+    </div>
+    <div class="column middle" style="background-color: rgb(172,196,192);">
+      <h2>About Me</h2>
+      <p>
+        I am Mmela, an aspiring web developer currently enrolled in a web development learnership program with Equal Experts through Umuzi.org. My passion lies in web development, and I am diligently working to acquire the essential skills needed to thrive as a successful web developer. My primary areas of focus include web development, Scrum, and the Agile Methodology.
+        <p>As part of my journey, I am gaining practical experience in project conceptualization, testing, and ensuring efficient and seamless navigation in the final output. My dedication to learning and personal growth as a web developer is evident through my active participation in this learnership program. Designed to equip aspiring web developers with the necessary knowledge and skills, this program aligns perfectly with my goals.</p>
+      </p>
+      <p>In summary, I am a hardworking and dedicated individual who is deeply passionate about web development. I am committed to achieving my aspirations and contributing meaningfully to the industry. </p>
+    
+      <h3>Prefered Coding Languge </h3>
+      <ul>
+        <li>HTML</li>
+        <li>JAVASCRIPT</li>
+        <li>PYTHON</li>
+      </ul>
+      <h3>Prefered Tools </h3>
+      <ul>
+        <li>Linux Ubuntu</li>
+        <li>Canva</li>
+        <li>GitHub</li>
+        <li>Figma</li>
+      </ul>
+      
+      <p>
+        javascript is the main coding language of use, I have started learning
+        html and css. This is inline with the aspirations of bieng a web
+        developer. The Operating system of choice is Ubuntu linux. Beginner in
+        python and c++.
+      </p>
+      <p><h3>Contacts</h3>
+        <ul>
+        <li><a href="https://www.linkedin.com/in/mmeli-dyantyi-84abb32a0/">linkedIn</a></li>
+        <li>Email adress : mmeldyantyi@gmail.com</li>
+        
+      </ul>
+     </div>
+   
+  </body>
 </html>
