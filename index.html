@@ -1,33 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <title>Mmeli Gabriel Dyantyi's Personal website.</title>
-    <style>
- * {
-  box-sizing: border-box;
-}
-
-.column {
-  float: left;
-  padding: 10px;
-  height: 300px;
-}
-
-.left, .right {
-  width: 25%;
-}
-
-.middle {
-  width: 50%;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-      .myFace {
-        width: 350px;
+<head>
+	<title>Mmeli Gabriel Dyantyi's Personal website</title>
+	<style>
+		.column {
+			float: left;
+			width: 33%;
+		}
+		.row: after {
+			content: '';
+			display: table;
+			clear: both;
+		}
+		.myFace {
+        width: 200px;
+      }
+      .logo {
+      	width: 50px;
       }
       .border {
         border-color: gray;
@@ -36,61 +25,133 @@
         border-radius: 1%;
       }
       
-    </style>
-  </head>
-  <body style="background-color: rgb(172,196,193);">
-   
-    <div class="column left" style="background-color: rgb(192,192,192);">
-      
-      <img
-        class="myFace border"
-        src="face.jpeg"
-        alt="My picture"
-      />
+      .background {
+      	background-color: silver;
+      }
+      body {
+      	color: black;
+      	padding-top: 60px;
+      }
 
+	  .navbar {
+	    list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	    overflow: hidden;
+	    background-color: gray;
+	    position: fixed;
+	    top: 0;
+	    width: 100%;
+	  }
 
+	  nav {
+	    float: left;
+	  }
 
-      <h2>Mmela Gabriel Dyantyi</h2>
-      <h3>Web developer learnership for Equal Experts through Umuzi.org</h3>
-    </div>
-    <div class="column middle" style="background-color: rgb(172,196,192);">
-      <h2>About Me</h2>
-      <p>
-        I am Mmela, an aspiring web developer currently enrolled in a learnership program with Equal Experts through Umuzi.org. My passion lies in web development, and I am actively working to acquire the essential skills needed to thrive in this field. My focus areas include web development, Scrum, and Agile Methodology.
-      </p>
-      <p>In summary, I am a hardworking and dedicated individual currently enrolled in a Umuzi learnership on web development, who is deeply passionate about web development. I am committed to achieving my aspirations and contributing meaningfully to the industry. </p>
+	  nav a {
+	    display: block;
+	    color: black;
+	    text-align: center;
+	    padding: 14px 16px;
+	    text-decoration: none;
+	  }
+
+	  nav a:hover {
+	    background-color: grey;
+	  }
+	  h3 {
+	  	text-align: center;
+	  }
+	  #navbar {
+		  list-style-type: none;
+		  margin: 0;
+		  padding: 0;
+		  overflow: hidden;
+		  background-color: gray;
+		}
+
+		#navbar li {
+		  float: left;
+		}
+
+		#navbar li a {
+		  display: block;
+		  color: black;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		}
+
+		#navbar li a:hover {
+		  background-color: grey;
+		}
+		.column:nth-child(2) {
+  		text-align: left;
+		}
+		.column:nth-child(2) {
+  		text-align: left;
+		}
+	</style>
+</head>
+<body class='background'>
+
+  <div class='row'>
+
+	<div class='column'>
+			<ul id="navbar" class="navbar">
+		    <li id='nav'><a href="#AboutMe">About Me</a></li>
+		    <li id='nav'><a href="#Skills">Skills</a></li>
+		    <li id='nav'><a href="#Project-Portfolio">Project-Portfolio</a></li>
+		    <li id='nav'><a href="#contacts">Contacts</a></li>
+		  </ul>
+		</p>
+		<p><img src ='face.jpeg' alt='MyFace' class='myFace border'>
+			<h1>Mmela Gabriel Dyantyi</h1>
+
+		
+	</div>
+	<div class='column' width: 50%;>
+		
+		<h3 id='AboutMe'>About Me</h3>
+	      <p>
+	        I am Mmela, an aspiring web developer currently enrolled in a learnership program with Equal Experts through Umuzi.org. My passion lies in web development, and I am actively working to acquire the essential skills needed to thrive in this field. My focus areas include web development, Scrum, and Agile Methodology.
+	      </p>
+<div class="row">
+	<h3 id = 'Skills'>Skills</h3>
+  <div class="column" style="width:50%; float:left;">
     
-      <div class='column' style="background-color:#aaa;" width:50%;>
-      <h3>Skills: </h3>
-      
-      <h4>Languages</h4>
-      <ul>
-        <li>HTML</li>
-        <li>JAVASCRIPT</li>
-        <li>PYTHON</li>
-      </ul>
-      <div class='column' style="background-color:#aaa;" width:50%; align: left;>
-      <h4>Prefered Tools </h4>
-      <ul>
-        <li>Linux Ubuntu</li>
-        <li>Canva</li>
-        <li>GitHub</li>
-        <li>Figma</li>
-      </ul>
-      </div>
+    <h4>Languages</h4>
+    <ol>
+      <li>HTML</li>
+      <li>JAVASCRIPT</li>
+      <li>PYTHON</li>
+    </ol>
+  </div>
+  <div class="column" style="width:50%; float:right;">
+    <h4>Preferred Tools</h4>
+    <ol>
+      <li>Linux Ubuntu</li>
+      <li>Canva</li>
+      <li>GitHub</li>
+      <li>Figma</li>
+    </ol>
+    </div>
+    <h3 id='Project-Portfolio'>Project-Portfolio</h3>
+
+    <a src="matrices.jpeg" alt='matrices'>A simple matrix calculator can perform basic operations such as addition, subtraction, multiplication, and division of matrices</a>
+      <a href="https://github.com/MmelIGaba/Matrix-Algebra"><img src='matrices.jpeg' alt='matrices' width=500px"></a>
+      <h3 id='contacts'>Contacts</h3>
       <p>
-        javascript is the main coding language of use, I have started learning
-        html and css. This is in line with the aspirations of being a web
-        developer. The Operating system of choice is Ubuntu Linux. Beginner in
-        python and c++.
-      </p>
-      <p><h3>Contacts</h3>
         <ul>
         <li><a href="https://www.linkedin.com/in/mmeli-dyantyi-84abb32a0/">linkedIn</a></li>
         <li>Email adress : mmeldyantyi@gmail.com</li>
-        
+       </p>
       </ul>
-     </div>
-   
-  </body>
+     
+  </div>
+</div>
+
+	</div>
+  </div>
+</body>
 </html>
