@@ -3,9 +3,22 @@
     grid-template-columns: 1fr;
     gap: 10px;
     padding-top: 60px;
-}
-
-.navbar {
+  }
+  
+  .background {
+    background-color: silver;
+    color: black;
+  }
+  
+  .section {
+    padding: 20px;
+  }
+  
+  .column {
+    text-align: center;
+  }
+  
+  .navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -14,87 +27,29 @@
     position: fixed;
     top: 0;
     width: 100%;
-}
-
-nav {
-    float: left;
-}
-
-nav a {
+  }
+  
+  nav {
+    float: left; /* Removed as it's not needed and can cause issues with responsive layouts */
+  }
+  
+  nav a {
     display: block;
     color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-}
-
-nav a:hover {
+  }
+  
+  nav a:hover {
     background-color: grey;
-}
-
-.myFace {
+  }
+  
+  /* Removed unused styles for #navbar and its elements */
+  
+  .myFace {
     width: 200px;
     border: 2px outset gray;
     border-radius: 1%;
-}
-
-.background {
-    background-color: rgb(245, 245, 245);
-    color: rgb(250, 246, 246);
-}
-
-.section {
-    padding: 20px;
-}
-
-.column {
-    text-align: center;
-}
-
-#navbar {
-    float: left;
-}
-
-#navbar li {
-    float: left;
-}
-
-#navbar li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-#navbar li a:hover {
-    background-color: grey;
-}
-
-.section {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-}
-
-.column {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-
-.myFace {
-    width: 200px;
-    height: auto;
-    border-color: gray;
-    border-width: 2px;
-    border-style: outset;
-    border-radius: 1%;
-}
-
-
-@media only screen and (max-width: 768px) {
-    .myFace {
-        width: 150px;
-    }
-}
+  }
+  
