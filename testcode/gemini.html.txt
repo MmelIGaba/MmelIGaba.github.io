@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+
+	
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mmeli Gabriel Dyantyi's Personal website.</title>
+    <style>
+            h2{
+              text-align: center;
+              font-family: monospace;
+            }
+            .myFace {
+              width: 350px;
+              al
+            }
+            .border {
+              border-color: gray;
+              border-width: 5px;
+              border-style: solid;
+              border-radius: 80%;
+            }
+            .green-background {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="section1">
+      <img
+        class="myFace border"
+        src="1687246377378.jpeg"
+        alt="My picture"
+      />
+      <h2>Mmela Gabriel Dyantyi</h2>
+      <h3>Web developer learnership for Equal Experts through Umuzi.org</h3>
+    </div>
+    <div id="section2">
+      <h2>Headings</h2>
+      <a href="#section3">Link to third section</a>
+    </div>
+    <div id="section3">
+      <p>
+        Mmela is an aspiring web developer who is currently on a web developing
+        learnership program for Equal Experts through Umuzi.org 1. Mmela is
+        passionate about web development and is working hard to gain the
+        necessary skills to become a successful web developer. Mmela’s current
+        focus is on web development, Scrum, and Agile Methodology 1. Mmela is
+        also gaining experience in project conceptualization, testing, and
+        ensuring the output’s efficiency and flawless navigations 1. Mmela’s
+        dedication to learning and growing as a web developer is evident through
+        their participation in the learnership program. This program is designed
+        to provide aspiring web developers with the necessary skills and
+        knowledge to succeed in the industry 2. Overall, Mmela is a hardworking
+        and dedicated individual who is passionate about web development and is
+        committed to achieving their goals.
+      </p>
+      <p>
+        javascript is the main coding language of use, I have started learning
+        html and css. This is inline with the aspirations of bieng a web
+        developer. The Operating system of choice is Ubuntu linux. Beginner in
+        python and c++.
+      </p>
+      <p>
+        For further inquiry, contact me on: My LinkedIn account is
+        <a href="https://www.linkedin.com/in/mmeli-dyantyi-84abb32a0/">here</a>.
+        For enquiries contact my email on mmeldyantyi@gmail.com.
+      </p>
+  <h1>Contact Me</h1>
+  <form action="mailto:youremail@example.com" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea><br>
+    <button type="submit">Send Message</button>
+  </form>
+    </div>
+  </body>
+</html>
+
