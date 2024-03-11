@@ -9,12 +9,11 @@
   clear: both;
 }
 
-@media screen and(min-width: 401px) {
+@media screen and(min-width: 400px) {
   .myFace {
     width: min-content;
-    height: min-content;
   }
-
+  
 }
 
 .logo {
@@ -84,7 +83,7 @@ body {
   background-color: grey;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 600px) {
   .navbar {
     position: fixed;
     top: 0;
