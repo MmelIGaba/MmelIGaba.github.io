@@ -11,7 +11,8 @@
 
 @media screen and(min-width: 401px) {
   .myFace {
-    width: auto;
+    width: min-content;
+    height: min-content;
   }
 
 }
