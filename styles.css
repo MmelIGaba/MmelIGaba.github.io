@@ -25,25 +25,25 @@
 }
 
 body {
-  background-color: rgb(12, 41, 51);
+  background-color: rgb(211, 211, 211);
 }
 .container {
   max-width: 600px;
   margin: 50px auto;
   padding: 20px;
-  background-color: #accdeb;
+  background-color: #a9a9aa;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 @media screen and (min-width: 400px) {
   body {
-    background-color: rgb(253, 244, 224);
+    background-color: rgb(250, 232, 194);
   }
 }
 @media screen and (min-width: 800px) {
   body {
-    background-color: rgb(129, 168, 127);
+    background-color: rgb(214, 245, 213);
   }
 }
 
