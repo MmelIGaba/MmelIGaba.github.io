@@ -27,13 +27,13 @@
 
 
 body {
-    background-color: lightblue;
+    background-color: rgb(12, 41, 51);
   }
   .container {
     max-width: 600px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #027039;
+    background-color: #384550;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -41,7 +41,7 @@ body {
 
   @media screen and (min-width: 400px) {
     body {
-      background-color: lightgreen;
+      background-color: rgb(223, 183, 98);
     }
   }
   
