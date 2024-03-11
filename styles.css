@@ -36,6 +36,8 @@ body {
   box-shadow: 0 0 10px rgba(255, 251, 251, 0.1);
 }
 
+
+
 @media screen and (min-width: 400px) {
   body {
     background-color: rgb(250, 232, 194);
