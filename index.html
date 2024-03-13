@@ -1,93 +1,143 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mmeli Gabriel Dyantyi - personal site</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    .into-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      padding: 20px;
+      align-items: center;
+    }
 
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Mmeli Gabriel Dyantyi's Personal website</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+    .hold-pic {
+      max-width: 100%;
+      height: auto;
+    }
 
+    @media screen and (max-width: 600px) {
+      .into-container {
+        grid-template-columns: 1fr;
+      }
+
+      .hold-pic {
+        display: none;
+      }
+    }
+  </style>
 </head>
 
-<body class='background'>
+<body>
+  <ul id="navbar" class="navbar">
+    <li id="nav">
+      <a href="#AboutMe">About Me</a>
+    </li>
+    <li id="nav">
+      <a href="#Skills">Skills</a>
+    </li>
+    <li id="nav">
+      <a href="#Project-Portfolio">Project-Portfolio</a>
+    </li>
+    <li id="nav">
+      <a href="#contacts">Contacts</a>
+    </li>
+  </ul>
 
-	<div class='row'>
 
-		<div class='column'>
-			<ul id="navbar" class="navbar">
-				<li id='nav'><a href="#AboutMe">About Me</a></li>
-				<li id='nav'><a href="#Skills">Skills</a></li>
-				<li id='nav'><a href="#Project-Portfolio">Project-Portfolio</a></li>
-				<li id='nav'><a href="#contacts">Contacts</a></li>
-			</ul>
-			</p>
-			<p><img src='face.jpeg' alt='MyFace' class='myFace border'> 
-			<h1>Mmela Gabriel Dyantyi</h1>
+  <div class="into-container">
+    <div id="pic">
+      <img src="stand.jpg" alt="Riot Games' Pheonix Valorant fan art." class="hold-pic border">
+    </div>
+    <div>
+      <h1>Mmela Gabriel Dyantyi</h1>
+      <h4>... aspiring web developer and engineer</h4>
+    </div>
+  </div>
 
+  <div class="container">
+    <div class="grid-item">
+      <div>
+        <h3 id="AboutMe">About Me</h3>
+        <p>
+          I am Mmela, an aspiring web developer currently enrolled in a learnership program with Equal Experts
+          through Umuzi.org. My passion lies in web development, and I am actively working to acquire the
+          essential skills needed to thrive in this field. My focus areas include web development, Scrum, and
+          Agile Methodology.
+        </p>
+      </div>
+    </div>
 
-		</div>
-		<div class='column' width: 50%;>
+    <div class="grid-item">
+      <h3 id="Project-Portfolio">Project-Portfolio</h3>
+      <div>
+        <a src="matrices.jpeg" alt="matrices">
+          A simple matrix calculator can perform basic operations such as
+          addition, subtraction, multiplication, and division of matrices
+        </a>
+      </div>
+      <div>
+        <a href="https://github.com/MmelIGaba/Matrix-Algebra" target="_blank">
+          <img src="matrices.jpeg" alt="matrices" class="projectImg">
+        </a>
+      </div>
+    </div>
+    <div class="grid-item">
+      <h3 id="Skills">Skills</h3>
+      <div class="column" style="width:50%; float:right;">
+        <h4>Languages</h4>
+        <ul>
+          <li>HTML</li>
+          <li>JAVASCRIPT</li>
+          <li>PYTHON</li>
+        </ul>
+      </div>
+      <div class="column" style="width:50%; float:left;">
+        <h4>Preferred Tools</h4>
+        <ul>
+          <li>Linux Ubuntu</li>
+          <li>Canva</li>
 
-			<h3 id='AboutMe'>About Me</h3>
-			<p>
-				I am Mmela, an aspiring web developer currently enrolled in a learnership program with Equal Experts
-				through Umuzi.org. My passion lies in web development, and I am actively working to acquire the
-				essential skills needed to thrive in this field. My focus areas include web development, Scrum, and
-				Agile Methodology.
-			</p>
-			<div class="row">
-				<h3 id='Skills'>Skills</h3>
-				<div class="column" style="width:50%; float:left;">
+          <li>GitHub</li>
+          <li>Figma</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="grid-item-bottom">
+    <div class="subgrid">
+      <div>
+        <p><a href="https://drive.google.com/file/d/1SlBYNYA4dyfnteLDRtmWAvgQ3oc0iz2E/view?usp=sharing" target="_blank">
+            <h4>CV</h4>
+          </a></p>
+        <h4 id='contacts'>Contacts</h4>
+        <p>
 
-					<h4>Languages</h4>
-					<ol>
-						<li>HTML</li>
-						<li>JAVASCRIPT</li>
-						<li>PYTHON</li>
-					</ol>
-				</div>
-				<div class="column" style="width:50%; float:right;">
-					<h4>Preferred Tools</h4>
-					<ol>
-						<li>Linux Ubuntu</li>
-						<li>Canva</li>
-						<li>GitHub</li>
-						<li>Figma</li>
-					</ol>
-				</div>
-				<h3 id='Project-Portfolio'>Project-Portfolio</h3>
-
-				<a src="matrices.jpeg" alt='matrices'>A simple matrix calculator can perform basic operations such as
-					addition, subtraction, multiplication, and division of matrices</a>
-				<a href="https://github.com/MmelIGaba/Matrix-Algebra" target='_blank'><img src='matrices.jpeg'
-						alt='matrices' width=500px"></a>
-				<p><a href="https://drive.google.com/file/d/1SlBYNYA4dyfnteLDRtmWAvgQ3oc0iz2E/view?usp=sharing"
-						target="_blank">
-						<h3>CV</h3>
-					</a></p>
-				<h3 id='contacts'>Contacts</h3>
-				<p>
-				<ul>
-					<li><a href="https://www.linkedin.com/in/mmeli-dyantyi-84abb32a0/" target="_blank">linkedIn</a></li>
-					<li>Email adress : mmeldyantyi@gmail.com</li>
-				</ul>
-				<h1>Contact Me</h1>
-				<form action="mailto:mmeligabrieldyantyi@gmail.com" method="post">
-					<label for="name">Name:</label>
-					<input type="text" id="name" name="name" required><br>
-					<label for="email">Email:</label>
-					<input type="email" id="email" name="email" required><br>
-					<label for="message">Message:</label>
-					<textarea id="message" name="message" rows="5" required></textarea><br>
-					<button type="submit">Send Message</button>
-				</form>
-				</p>
-			</div>
-		</div>
-
-	</div>
-	</div>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/mmeli-dyantyi-84abb32a0/" target="_blank">linkedIn</a></li>
+          <li>Email adress : mmeldyantyi@gmail.com</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact Me</h3>
+        <form action="mailto:mmeligabrieldyantyi@gmail.com" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea><br>
+          <button type="submit">Send Message</button>
+        </form>
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
 </body>
 
 </html>
