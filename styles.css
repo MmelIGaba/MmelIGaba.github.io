@@ -101,3 +101,25 @@
     border-style: outset;
     border-radius: 1%;
 }
+    .into-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      padding: 20px;
+      align-items: center;
+    }
+
+    .hold-pic {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @media screen and (max-width: 600px) {
+      .into-container {
+        grid-template-columns: 1fr;
+      }
+
+      .hold-pic {
+        display: none;
+      }
+    }
