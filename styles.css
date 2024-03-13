@@ -12,13 +12,13 @@
   
   .navbar a {
     text-decoration: none;
-    color: #333; /* Default color */
+    color: #333; 
     font-weight: bold;
-    transition: color 0.3s ease; /* Smooth transition effect */
+    transition: color 0.3s ease;
   }
   
   .navbar a:hover {
-    color: #ff4500; /* Change color on hover */
+    color: #ff4500; 
   }
   
   @media (max-width: 480px) {
