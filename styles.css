@@ -1,125 +1,144 @@
 .navbar {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-  }
-  
-  .navbar li {
-    margin-right: 10px;
-  }
-  
-  .navbar a {
-    text-decoration: none;
-    color: #333; 
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
-  
-  .navbar a:hover {
-    color: #ff4500; 
-  }
-  
-  @media (max-width: 480px) {
-    .navbar {
-      flex-direction: column;
-      align-items: left;
-    }
-  
-    .navbar li {
-      margin-right: 0;
-      margin-bottom: 10px;
-    }
-  }
-  
-  
-  @media (max-width: 768px) {
-    .container {
-      grid-template-columns: 1fr; 
-      align-items: center;
-    }
-  }
-  
-  .projectImg {
-    max-width: 100%;
-    height: auto; 
-  }
-  
-
-  .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 15px; 
-    grid-auto-flow: row;
-
-  }
-  
-  .hold-pic {
-    width: 100px;
-  }
-  
-  @media (min-width: 480px) {
-    .hold-pic {
-      width: 200px;
-    }
-  }
-  .container {
-    margin-bottom: 50px;
-  }
-
-  .grid-item-bottom {
-    grid-column: 1 / -1;
-  }
-  body {
-    background-color: #9cc4c4;
-    
-  }
-  .subgrid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
-    align-content: center;
-    
-  }
-  
-  @media (min-width: 768px) {
-    .container {
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-  }
-  .grid-item {
-    background-color: #c5c5c5;
-    padding: 20px;
-   
-  }
-  .border {
-    border-color: gray;
-    border-width: 2px;
-    border-style: outset;
-    border-radius: 1%;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
 }
-    .into-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-      padding: 20px;
-      align-items: center;
-    }
 
-    .hold-pic {
-      max-width: 100%;
-      height: auto;
-    }
+.navbar li {
+  margin-right: 10px;
+}
 
-    @media screen and (max-width: 600px) {
-      .into-container {
-        grid-template-columns: 1fr;
-      }
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
 
-      .hold-pic {
-        display: none;
-      }
-    }
+.navbar a:hover {
+  color: #ff4500;
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: left;
+  }
+
+  .navbar li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    align-items: center;
+  }
+}
+
+.projectImg {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 15px;
+  grid-auto-flow: row;
+
+}
+
+.hold-pic {
+  width: 100px;
+}
+
+@media (min-width: 480px) {
+  .hold-pic {
+    width: 200px;
+  }
+}
+
+.container {
+  margin-bottom: 50px;
+}
+
+.grid-item-bottom {
+  grid-column: 1 / -1;
+}
+
+body {
+  background-color: #9cc4c4;
+
+}
+
+.subgrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  align-content: center;
+
+}
+
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.grid-item {
+  background-color: #cce6df;
+  padding: 20px;
+
+}
+
+.border {
+  border-color: gray;
+  border-width: 2px;
+  border-style: outset;
+  border-radius: 1%;
+}
+
+.into-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  align-items: center;
+}
+
+.hold-pic {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .into-container {
+    grid-template-columns: 1fr;
+  }
+
+  .hold-pic {
+    display: none;
+  }
+}
+
+.grid-item:last-child {
+  grid-column: 1 / -1; 
+  grid-row: 4; 
+}
+
+.contact-info > div {
+  width: 100%; 
+}
+
+.centered {
+  text-align: center;
+}
