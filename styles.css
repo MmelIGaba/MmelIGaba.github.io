@@ -12,18 +12,18 @@
 
 .navbar a {
   text-decoration: none;
-  color: #333;
+  color: #1c2020;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 .navbar a:hover {
-  color: #ff4500;
+  color: #faf8f7;
 }
 
 @media (max-width: 480px) {
   .navbar {
-    flex-direction: column;
+    flex-direction: row;
     align-items: left;
   }
 
@@ -66,7 +66,7 @@
 }
 
 .container {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .grid-item-bottom {
@@ -134,6 +134,7 @@ body {
   grid-column: 1 / -1; 
   grid-row: 4; 
 }
+
 
 .contact-info > div {
   width: 100%; 
