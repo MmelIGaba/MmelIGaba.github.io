@@ -43,7 +43,7 @@
 
 .projectImg {
   max-width: 100%;
-  height: auto;
+  height: 10%;
 }
 
 
@@ -62,6 +62,11 @@
 @media (min-width: 480px) {
   .hold-pic {
     width: 200px;
+  }
+}
+@media (max-width: 480px) {
+  .hold-pic {
+    width: 100px;
   }
 }
 

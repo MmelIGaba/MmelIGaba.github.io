@@ -34,6 +34,7 @@ nav li a:hover {
 @media screen and (max-width: 600px) {
     nav li:nth-child(3),
     nav li:nth-child(4) {
-        display: none;
+        display: -moz-stack;
+        padding: 1px 3px;
     }
 }
