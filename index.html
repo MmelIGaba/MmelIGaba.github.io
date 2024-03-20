@@ -6,34 +6,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mmeli Gabriel Dyantyi - personal site</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
-  <link rel="stylesheet" type="text/css" href="test.css">
 </head>
 
 <body>
   <nav>
     <ul id="navbar" class="navbar">
       <li>
-        <a href="#AboutMe">About Me </a>
+        <a href="#AboutMe">About Me</a>
       </li>
       <li>
-        <a href="#Skills">Skills </a>
+        <a href="#Skills">Skills</a>
       </li>
       <li>
-        <a href="#Project-Portfolio">Project-Portfolio </a>
+        <a href="#Project-Portfolio">Project-Portfolio</a>
       </li>
       <li>
         <a href="#contacts">Contacts</a>
       </li>
       <li>
-        <a href="https://drive.google.com/file/d/1SlBYNYA4dyfnteLDRtmWAvgQ3oc0iz2E/view?usp=sharing" target="_blank">
-          CV
-        </a>
+        <a href="https://drive.google.com/file/d/1SlBYNYA4dyfnteLDRtmWAvgQ3oc0iz2E/view?usp=sharing"
+          target="_blank">CV</a>
       </li>
     </ul>
-</nav>
+    <div class="hamburger-menu">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </nav>
 
   <div class="into-container">
-    <div id="pic">
+    <div class="align">
       <img src="pp.jpg" alt="my face" class="hold-pic border">
     </div>
     <div>
@@ -62,19 +65,10 @@
       </div>
       <div>
         <img src="matrices.jpeg" alt="matrices" class="projectImg">
-        <a href="https://github.com/MmelIGaba/Matrix-Algebra" target="_blank">
-          View on GitHub
-        </a>
+        <a href="https://github.com/MmelIGaba/Matrix-Algebra" target="_blank">View on GitHub</a>
       </div>
-      <!-- <div class="grid-item background-color-change">
-        <div class="image centered background-color-change">
-            <div class="centered">
-              comming soon... maybe.<a href="https://github.com/MmelIGaba/mini-cyclone-arcade-game/tree/main"
-                target="_blank">view</a>
-            </div>
-        </div>
-    </div>     -->
     </div>
+
     <div class="grid-item">
       <h3 id="Skills">Skills</h3>
       <div class="column" style="width:50%; float:right;">
@@ -96,23 +90,22 @@
       </div>
     </div>
 
-
     <div class="grid-item">
       <h3 class="centered">Contact Me</h3>
       <div id="form">
         <form action="https://formspree.io/f/xdoqdrpk" method="POST" class="centered">
-          <h4><label>
+          <h5 ><label>
               Your email:
               <input type="email" name="email">
-            </label></h4>
-          <h4><label>
+            </label></h5>
+          <h5 ><label>
               Your message:
-              <textarea name="message"></textarea>
-            </label></h4>
+              <textarea name="message" style="width: 100%;"></textarea>
+            </label></h5>
           <button type="submit">Send</button>
         </form>
       </div>
-  
+
       <div class="contact-info centered">
         <h4 id='contacts' class="centered">Contacts</h4>
         <h5>linkedIn Account:<a href="https://www.linkedin.com/in/mmeli-dyantyi-84abb32a0/" target="_blank"> here</a>
@@ -120,6 +113,9 @@
         <h5>Email address: mmeldyantyi@gmail.com</h5>
       </div>
     </div>
+  </div>
+
+  <script src="burger.js"></script>
 </body>
 
 </html>
