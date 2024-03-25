@@ -1,3 +1,2 @@
-### Click link below to visit my github.
-
-https://mmeligaba.github.io./
+# mySite
+playing around with css, html and js

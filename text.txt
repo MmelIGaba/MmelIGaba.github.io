@@ -1,5 +1,0 @@
-1. file tsruct
-2. nav look and padding and styling
-3. Space usge
-4. form text area solid
-5. clean up css file
