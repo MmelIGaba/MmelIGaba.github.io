@@ -8,7 +8,10 @@ body {
     max-width: 400px; 
     margin: 0 auto; 
 }
-
+.projectImg {
+  max-width: 100%;
+  height: 10%;
+}
 .form-container label {
     display: block; 
 }
@@ -45,7 +48,8 @@ body {
     border-style: outset;
     border-radius: 1%;
   }
-  @media only screen and (min-width: 794px) and (max-width: 1050px) {
+
+  @media only screen and (min-width: 780px) and (max-width: 1050px) {
     .grid-item:last-child {
         grid-column: 1 / -1; 
     }
@@ -67,8 +71,4 @@ body {
     align-items: center;
   }
 
-}
-.projectImg {
-  max-width: 100%;
-  height: 10%;
 }
