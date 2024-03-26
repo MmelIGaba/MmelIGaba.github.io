@@ -19,7 +19,8 @@ body {
 .form-container input[type="text"],
 .form-container input[type="email"],
 .form-container textarea {
-    width: 100%; 
+    max-width: 100%;
+    min-width: 100%;
     box-sizing: border-box; 
     resize: both; 
     margin-bottom: 10px; 
