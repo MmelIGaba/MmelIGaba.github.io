@@ -43,17 +43,17 @@ nav li a:hover {
     display: none;
 }
 
-.specific-link {
+/* .specific-link {
     display: none;
-}
+} */
 @media screen and (min-width: 1050px) {
     .nav {
         display: none;
     }
 
-    .specific-link {
+    /* .specific-link {
         display: block;
-    }
+    } */
 }
 
 @media screen and (max-width: 600px) {
