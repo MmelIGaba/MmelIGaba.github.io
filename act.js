@@ -18,10 +18,14 @@ document
       },
     })
       .then((response) => {
-        console.log("Form submitted successfully");
-        document.getElementById("contactForm").reset();
+        if (response.ok) {
+          alert("Form submitted successfully!");
+        } else {
+          alert("Form submission failed. Please make sure it is you entered the correct email.");
+        }
       })
       .catch((error) => {
-        console.error("Error submitting the form:", error);
+        console.error("Error:", error);
+        alert("An error occurred. Please try again later.");
       });
   });
