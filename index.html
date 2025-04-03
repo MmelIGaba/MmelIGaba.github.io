@@ -6,63 +6,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Mmeli Gabriel Dyantyi</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="cssFiles/look.css">
+    <link rel="stylesheet" href="/cssFiles/navigator.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Mmeli Gabriel Dyantyi</a>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mmeli Dyantyi</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#AboutMe">About Me</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Project-Portfolio">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#Skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contacts">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="https://resume-rho-neon.vercel.app/" target="_blank">CV</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Project-Portfolio">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://resume-rho-neon.vercel.app/" target="_blank">CV</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container text-center mt-5 pt-5">
+    <section class="container text-center mt-5 pt-5">
         <h1>Mmeli Gabriel Dyantyi</h1>
-        <h4>Aspiring Web Developer & Engineer</h4>
-    </div>
-
-    <section id="AboutMe" class="container mt-5">
-        <h2>About Me</h2>
-        <p>I am a dedicated web developer currently participating in a learner-ship program facilitated by Equal Experts through Umuzi.org. My expertise includes web development, Scrum, and Agile Methodology.</p>
+        <h4>Web Developer Contractor</h4>
     </section>
 
-    <section id="Project-Portfolio" class="container mt-5">
-        <h2>Projects</h2>
-        <div class="card">
-            <img src="images/matrices.jpeg" class="card-img-top" alt="Matrix Calculator">
-            <div class="card-body">
-                <h5 class="card-title">Matrix Algebra Calculator</h5>
-                <p class="card-text">A tool for matrix operations including addition, subtraction, and multiplication.</p>
-                <a href="https://github.com/MmelIGaba/Matrix-Algebra" class="btn btn-primary" target="_blank">View on GitHub</a>
+    <section class="container mt-5">
+        <h3 id="AboutMe" class="text-center">About Me</h3>
+        <p>
+            I am a Web Developer Contractor with a strong foundation in full-stack web development. I specialize in front-end
+            technologies like HTML, CSS, and JavaScript, as well as back-end frameworks such as .NET. With experience in cloud services
+            like Firebase and a keen interest in DevOps, I am continuously learning and growing in the tech industry.
+        </p>
+    </section>
+
+    <section class="container mt-5">
+        <h3 id="Project-Portfolio" class="text-center">Project Portfolio</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="images/matrices.jpeg" class="card-img-top" alt="Matrix Calculator">
+                    <div class="card-body">
+                        <h5 class="card-title">Matrix Algebra Calculator</h5>
+                        <p class="card-text">A simple web app for performing matrix operations.</p>
+                        <a href="https://github.com/MmelIGaba/Matrix-Algebra" class="btn btn-primary" target="_blank">GitHub</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="Skills" class="container mt-5">
-        <h2>Skills</h2>
-        <ul class="list-group">
-            <li class="list-group-item">HTML, JavaScript, Python</li>
-            <li class="list-group-item">Linux Ubuntu, GitHub, Figma, Canva</li>
-        </ul>
+    <section class="container mt-5">
+        <h3 id="Skills" class="text-center">Skills</h3>
+        <div class="row text-center">
+            <div class="col-md-6">
+                <h4>Languages</h4>
+                <p>HTML, CSS, JavaScript, Python, C++, C#</p>
+            </div>
+            <div class="col-md-6">
+                <h4>Tools & Frameworks</h4>
+                <p>Linux Ubuntu, .NET, Firebase, GitHub, Figma, Canva</p>
+            </div>
+        </div>
     </section>
 
-    <section id="contacts" class="container mt-5">
-        <h2>Contact Me</h2>
-        <form action="https://formspree.io/f/xdoqdrpk" method="POST">
+    <section class="container mt-5 mb-5">
+        <h3 id="contacts" class="text-center">Contact Me</h3>
+        <form id="contactForm" action="https://formspree.io/f/xdoqdrpk" method="POST" class="mx-auto w-50">
             <div class="mb-3">
                 <label for="name" class="form-label">Name:</label>
-                <input type="text" id="name" name="name" class="form-control">
+                <input type="text" id="name" name="name" class="form-control" required>
             </div>
             <div class="mb-3">
                 <label for="email" class="form-label">Email:</label>
@@ -70,17 +93,30 @@
             </div>
             <div class="mb-3">
                 <label for="message" class="form-label">Message:</label>
-                <textarea id="message" name="message" class="form-control"></textarea>
+                <textarea id="message" name="message" class="form-control" required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Send</button>
+            <button type="submit" class="btn btn-success">Send</button>
         </form>
-        <h4 class="mt-4">Social Links</h4>
-        <p><a href="https://www.linkedin.com/in/mmeli-dyantyi-84abb32a0/" target="_blank">LinkedIn</a></p>
-        <p><a href="https://github.com/MmelIGaba" target="_blank">GitHub</a></p>
-        <p>Email: <a href="mailto:mmeldyantyi@gmail.com">mmeldyantyi@gmail.com</a></p>
+        <div class="text-center mt-3">
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/mmeli-dyantyi-84abb32a0/" target="_blank">Profile</a></p>
+            <p>GitHub: <a href="https://github.com/MmelIGaba" target="_blank">Profile</a></p>
+            <p>Email: <a href="mailto:mmeldyantyi@gmail.com">mmeldyantyi@gmail.com</a></p>
+        </div>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            const formData = new FormData(event.target);
+            fetch(event.target.action, {
+                method: "POST",
+                body: formData,
+                headers: { Accept: "application/json" }
+            })
+            .then(response => response.ok ? alert("Form submitted successfully!") : alert("Submission failed."))
+            .catch(error => alert("An error occurred. Please try again."));
+        });
+    </script>
 </body>
-
 </html>
